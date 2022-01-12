@@ -6,6 +6,7 @@ Plug 'tpope/vim-sensible'
 Plug 'sheerun/vim-polyglot'
 Plug 'joshdick/onedark.vim'
 Plug 'itchyny/lightline.vim'
+Plug 'preservim/nerdtree'
 call plug#end()
 
 " colors
@@ -20,6 +21,9 @@ set nu
 set t_Co=256
 syntax on
 filetype indent plugin on
+
+" change the LEADER!
+let mapleader=","
 
 " MAPPING
 nnoremap <silent> <F4> :set cursorline!<CR>
@@ -36,3 +40,7 @@ inoremap <C-k> <ESC>:m .-2<CR>==gi
 " Visual mode
 vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
+
+" NERDTree
+noremap <Leader>e :NERDTreeToggle<CR>
+noremap <Leader>f :NERDTreeFind<CR>

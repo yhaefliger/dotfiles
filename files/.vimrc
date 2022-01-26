@@ -9,26 +9,26 @@ Plug 'itchyny/lightline.vim'
 Plug 'preservim/nerdtree'
 call plug#end()
 
-" colors
+" Colors
 let g:lightline = {
   \ 'colorscheme': 'onedark',
   \ }
 colorscheme onedark
 
-" defaults
+" Defaults
 set nocompatible
 set nu
 set t_Co=256
 syntax on
 filetype indent plugin on
 
-" change the LEADER!
+" Change the LEADER to ,!
 let mapleader=","
 
-" MAPPING
+" highight current line with F4
 nnoremap <silent> <F4> :set cursorline!<CR>
 
-" moving lines with control j/k
+" Moving lines with control j/k
 " Normal mode
 nnoremap <C-j> :m .+1<CR>==
 nnoremap <C-k> :m .-2<CR>==

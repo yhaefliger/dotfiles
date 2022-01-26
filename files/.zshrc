@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/yaha/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -73,10 +73,10 @@ eval `dircolors ~/.dircolors`
 plugins=(
 	git
 	nvm
+	sudo
+	history
 	composer
 	artisan
-	history
-	sudo
 	drupal
 )
 
@@ -116,18 +116,15 @@ source /usr/share/doc/fzf/examples/completion.zsh
 source ~/.bash_aliases
 source ~/.bash_commands
 
-alias composer73="php7.3 /usr/local/bin/composer"
-alias aqw="artisan queue:work --queue='high,default'"
-alias cw="code workspace.code-workspace"
-alias npw="npm run watch"
-alias npb="npm run build"
-alias phpswitch="sudo update-alternatives --config php"
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+# Default editor
 export EDITOR=vim
+
+# Add local bins to PATH variable
 export GOPATH="$HOME/gopath"
 export PATH="$PATH:$HOME/.rvm/bin:$HOME/.composer/vendor/bin:/usr/local/go/bin:$GOPATH:$GOPATH/bin:$HOME/.local/bin"
 eval "$(direnv hook zsh)"
 
+# Sdkman
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

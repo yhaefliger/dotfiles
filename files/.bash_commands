@@ -1,4 +1,4 @@
-# find drupal root folder
+# find root folder
 dr() {
   dir=.
   until [ $dir -ef / ]; do

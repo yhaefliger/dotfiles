@@ -6,7 +6,7 @@ My personal dotfiles. Targeted for any env with zsh/oh-my-zsh installed (windows
 
 Clone this repository into a `$HOME/.dotfiles` folder.
 ```
-git clone git@github.com:yhaefliger/dotfiles.git $HOME/.dotfiles
+git clone https://github.com/yhaefliger/dotfiles.git $HOME/.dotfiles
 ```
 I recommand you to install [Stow](https://www.gnu.org/software/stow/manual/stow.html) for symlink management of your dotfiles!
 

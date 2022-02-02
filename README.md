@@ -11,6 +11,7 @@ git clone git@github.com:yhaefliger/dotfiles.git $HOME/.dotfiles
 I recommand you to install [Stow](https://www.gnu.org/software/stow/manual/stow.html) for symlink management of your dotfiles!
 
 ## Bash
+![Bash theme preview](https://yhaefliger.github.io/dotfiles/bash.png)
 
 ### Prerequist
 
@@ -23,7 +24,7 @@ stow bash
 ```
 
 ## Vim
-
+![Vim theme preview](https://yhaefliger.github.io/dotfiles/vim.png)
 ### Prerequist
 
 - [Vim plug](https://github.com/junegunn/vim-plug#installation)

@@ -1,4 +1,4 @@
-# My Dotfiles
+# Dotfiles
 
 My personal dotfiles. Targeted for any env with zsh/oh-my-zsh installed (windows wsl, mac os, linux).
 

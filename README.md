@@ -12,8 +12,8 @@ I recommand you to install [Stow](https://www.gnu.org/software/stow/manual/stow.
 
 ## Bash
 
-Edited antigen theme to easily change dir bg color (`ZSH_DIR_COLOR` env variable) and show max 2 directories.
-Basic web dev plugins (git / composer / nvm) and framework I use most (artisan for Laravel and drush for Drupal).
+Edited agnoster theme to easily change dir bg color (`ZSH_DIR_COLOR` env variable) and show max 2 directories.
+Basic plugins (git / composer / nvm / sudo / history) and framework specifics for framework I use daily (artisan for Laravel and drush for Drupal).
 
 ![Bash theme preview](https://yhaefliger.github.io/dotfiles/bash.png)
 

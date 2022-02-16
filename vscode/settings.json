@@ -1,0 +1,129 @@
+{
+  "[blade]": {
+    "editor.autoClosingBrackets": "always"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "auto-close-tag.activationOnLanguage": [
+    "HTML (EEx)",
+    "HTML (Eex)",
+    "blade",
+    "cfml",
+    "ejs",
+    "erb",
+    "javascript",
+    "javascriptreact",
+    "jinja",
+    "lang-cfml",
+    "liquid",
+    "markdown",
+    "php",
+    "plaintext",
+    "plist",
+    "smarty",
+    "tpl",
+    "twig",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "xml"
+  ],
+  "auto-rename-tag.activationOnLanguage": ["*"],
+  "blade.format.enable": true,
+  "bladeFormatter.format.indentSize": 2,
+  "breadcrumbs.symbolSortOrder": "name",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": false,
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": false,
+  "editor.emptySelectionClipboard": false,
+  "editor.fontFamily": "'Fira Mono', 'Fira Mono for Powerline'",
+  "editor.fontSize": 15,
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.lineHeight": 25,
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.quickSuggestions": {
+    "comments": false,
+    "other": true,
+    "strings": true
+  },
+  "editor.snippetSuggestions": "top",
+  "editor.suggestFontSize": 15,
+  "editor.suggestLineHeight": 25,
+  "editor.tabSize": 2,
+  "emmet.includeLanguages": {
+    "blade": "html",
+    "smarty": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "files.associations": {
+    "*.scss": "sass",
+    "*.tpl": "smarty"
+  },
+  "files.exclude": {
+    "": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.watcherExclude": {
+    "**/typo3temp/*/**": true
+  },
+  "git.confirmSync": false,
+  "github.copilot.enable": {
+    "*": true
+  },
+  "gitlens.blame.highlight.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "intelephense.environment.documentRoot": "./",
+  "intelephense.environment.phpVersion": "7.4.27",
+  "javascript.format.semicolons": "remove",
+  "javascript.preferences.quoteStyle": "double",
+  "liveServer.settings.fullReload": true,
+  "oneDarkPro.vivid": false,
+  "phpcs.enable": false,
+  "phpcs.executablePath": "$HOME/.composer/vendor/bin/phpcs",
+  "prettier.semi": false,
+  "prettier.singleQuote": false,
+  "redhat.telemetry.enabled": true,
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.experimental.classRegex": [
+    "addClass\\('([^']+)'\\)",
+    ["addClass\\(\\[([^]]*)\\]\\)", "'([^']*)'"],
+    "'class' => '([^']+)'"
+  ],
+  "tailwindCSS.includeLanguages": {
+    "php": "html",
+    "twig": "html"
+  },
+  "terminal.integrated.altClickMovesCursor": false,
+  "terminal.integrated.fontFamily": "\"UbuntuMono NF\"",
+  "terminal.integrated.fontSize": 15,
+  "todo-tree.general.tags": [
+    "BUG",
+    "FIXME",
+    "HACK",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "typescript.format.semicolons": "remove",
+  "vscode-pets.petColor": "black",
+  "window.customMenuBarAltFocus": false,
+  "window.nativeTabs": true,
+  "window.newWindowDimensions": "inherit",
+  "window.titleBarStyle": "custom",
+  "workbench.activityBar.visible": false,
+  "workbench.colorTheme": "One Dark Pro Flat",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.showTabs": false,
+  "workbench.sideBar.location": "right"
+}

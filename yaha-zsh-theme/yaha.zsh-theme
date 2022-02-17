@@ -241,6 +241,17 @@ prompt_aws() {
   esac
 }
 
+# Openstack connection status
+# - display cluster and current project
+# https://docs.infomaniak.cloud/user-guide/0010.environment/
+prompt_openstack() {
+  if [ -n "$OS_PROJECT_NAME" ] && [ -n "$OS_PASSWORD" ]; then
+    (echo $OS_AUTH_URL | grep -q infomaniak.cloud) && local cluster=$(echo $OS_AUTH_URL | sed 's/.*api.\([^ ]*\).infomaniak.*/\1/')
+    [ -z "$cluster" ] && cluster="openstack"
+        prompt_segment blue black "(${cluster:gs/%/%%}|${OS_PROJECT_NAME:gs/%/%%})"
+  fi
+}
+
 ## Main prompt
 build_prompt() {
   RETVAL=$?
@@ -248,6 +259,7 @@ build_prompt() {
   prompt_virtualenv
   prompt_aws
   prompt_context
+  prompt_openstack
   prompt_dir
   prompt_git
   prompt_bzr

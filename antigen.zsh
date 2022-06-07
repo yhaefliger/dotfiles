@@ -1821,8 +1821,8 @@ _antigen_compinit () {
   autoload -Uz compinit; compinit -d "$ANTIGEN_COMPDUMP"; compdef _antigen antigen
   add-zsh-hook -D precmd _antigen_compinit
 }
-autoload -Uz add-zsh-hook; add-zsh-hook precmd _antigen_compinit
-compdef () {}
+#autoload -Uz add-zsh-hook; add-zsh-hook precmd _antigen_compinit
+#compdef () {}
 
 if [[ -n "$ZSH" ]]; then
   ZSH="$ZSH"; ZSH_CACHE_DIR="$ZSH_CACHE_DIR"

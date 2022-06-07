@@ -3,6 +3,8 @@ export DOTFILES=$HOME/.dotfiles
 export ANTIGEN_LOG=$HOME/antigen.log
 export ZSH_DIR_COLOR=green
 
+#ZSH_DISABLE_COMPFIX=true
+
 # antigen plugins and theme management
 source $DOTFILES/antigen.zsh
 
@@ -12,6 +14,7 @@ antigen bundles <<EOBUNDLES
   git
   nvm
   sudo
+  ng
   history
   composer
   colored-man-pages

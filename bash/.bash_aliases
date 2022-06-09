@@ -10,3 +10,10 @@ alias phpswitch="sudo update-alternatives --config php"
 #pestphp
 alias p='vendor/bin/pest'
 alias pf='vendor/bin/pest --filter'
+#phpunit
+alias pu='vendor/bin/phpunit'
+alias puu='vendor/bin/phpunit --testsuite unit'
+alias puk='vendor/bin/phpunit --testsuite kernel'
+alias puf='vendor/bin/phpunit --testsuite functional'
+alias pug='vendor/bin/phpunit --group'
+alias puf='vendor/bin/phpunit --filter='

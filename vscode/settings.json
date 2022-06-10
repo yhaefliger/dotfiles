@@ -96,6 +96,7 @@
   "tailwindCSS.experimental.classRegex": [
     "addClass\\('([^']+)'\\)",
     ["addClass\\(\\[([^]]*)\\]\\)", "'([^']*)'"],
+    ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
     "'class' => '([^']+)'"
   ],
   "tailwindCSS.includeLanguages": {

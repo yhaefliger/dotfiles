@@ -311,12 +311,23 @@
     }
   },
   {
-    "key": "ctrl+k ctrl+r",
-    "command": "-workbench.action.keybindingsReference"
-  },
-  {
     "key": "ctrl+l",
     "command": "-expandLineSelection",
     "when": "textInputFocus"
+  },
+  /**
+   * Better pest
+   **/
+  {
+    "key": "ctrl+k ctrl+r",
+    "command": "better-pest.run"
+  },
+  {
+    "key": "ctrl+k ctrl+f",
+    "command": "better-pest.run-file"
+  },
+  {
+    "key": "ctrl+k ctrl+p",
+    "command": "better-pest.run-previous"
   }
 ]

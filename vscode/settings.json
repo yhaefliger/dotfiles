@@ -126,5 +126,10 @@
   "workbench.colorTheme": "One Dark Pro Flat",
   "workbench.editor.enablePreview": false,
   "workbench.editor.showTabs": false,
-  "workbench.sideBar.location": "right"
+  "workbench.sideBar.location": "right",
+  "better-pest.docker.enable": true,
+  "better-pest.docker.command": "./vendor/bin/sail php",
+  "better-pest.docker.paths": {
+    "/home/yaha/laravel/sail": "/var/www/html"
+  }
 }

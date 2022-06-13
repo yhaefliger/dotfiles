@@ -341,5 +341,17 @@
     "key": "ctrl+k ctrl+t",
     "command": "workbench.action.tasks.runTask",
     "args": "Sail Test"
+  },
+  /** PHPStan Taks
+    {
+      "label": "PHPStan",
+      "type": "shell",
+      "command": "./vendor/bin/sail php ./vendor/bin/phpstan analyse"
+    }
+  **/
+  {
+    "key": "ctrl+k ctrl+a",
+    "command": "workbench.action.tasks.runTask",
+    "args": "PHPStan"
   }
 ]

@@ -252,6 +252,20 @@ prompt_openstack() {
   fi
 }
 
+#show current php version
+prompt_phpversion() {
+  (( $+commands[php] )) || return
+  local PL_PHP_CHAR
+  () {
+    local LC_ALL="" LC_CTYPE="en_US.UTF-8"
+    PL_PHP_CHAR=$'\ue73d'
+  }
+  version=$(php --version)
+  [[ $version =~ "PHP ([[:digit:].]+)*" ]]
+  local v=$match[1]
+  prompt_segment blue black "PHP ${v//\%/%%}"
+}
+
 ## Main prompt
 build_prompt() {
   RETVAL=$?
@@ -260,6 +274,7 @@ build_prompt() {
   prompt_aws
   prompt_context
   prompt_openstack
+  prompt_phpversion
   prompt_dir
   prompt_git
   prompt_bzr

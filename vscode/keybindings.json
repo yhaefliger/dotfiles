@@ -330,4 +330,16 @@
     "key": "ctrl+k ctrl+p",
     "command": "better-pest.run-previous"
   }
+  /** Task to run all tests
+    {
+      "label": "Sail Test",
+      "type": "shell",
+      "command": "./vendor/bin/sail test"
+    }
+  */
+  {
+    "key": "ctrl+k ctrl+t",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Sail Test"
+  }
 ]

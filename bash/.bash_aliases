@@ -17,4 +17,7 @@ alias puk='vendor/bin/phpunit --testsuite kernel'
 alias pul='vendor/bin/phpunit --testsuite functional'
 alias pug='vendor/bin/phpunit --group'
 alias puf='vendor/bin/phpunit --filter='
+#laravel sail
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
+#larave envoy
+alias envoy='vendor/bin/envoy'

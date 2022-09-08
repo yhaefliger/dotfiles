@@ -7,13 +7,21 @@ Plug 'sheerun/vim-polyglot'
 Plug 'joshdick/onedark.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'preservim/nerdtree'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+
 call plug#end()
 
 " Colors
-let g:lightline = {
-  \ 'colorscheme': 'onedark',
-  \ }
-colorscheme onedark
+"let g:lightline = {
+"  \ 'colorscheme': 'onedark',
+"  \ }
+let g:lightline = {'colorscheme': 'catppuccin_mocha'}
+
+
+set termguicolors
+colorscheme catppuccin_frappe
+" colorscheme catppuccin
+
 
 " Defaults
 set nocompatible

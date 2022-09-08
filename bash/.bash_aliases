@@ -5,7 +5,7 @@ alias npb="npm run build"
 alias npd="npm run dev"
 alias npc="npm run codegen"
 # openstack connect && set export DISPLAY= to prevent python output to DISPLAY set by Cypress (windows VcXsrv)
-alias opc="export DISPLAY= && source $HOME/stack.sh"
+#alias opc="export DISPLAY= && source $HOME/stack.sh"
 alias phpswitch="sudo update-alternatives --config php"
 #pestphp
 alias p='vendor/bin/pest'
@@ -21,3 +21,5 @@ alias puf='vendor/bin/phpunit --filter='
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 #larave envoy
 alias envoy='vendor/bin/envoy'
+#laradock
+alias laradock='cd laradock && docker compose exec --user=laradock workspace bash'

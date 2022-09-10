@@ -23,3 +23,6 @@ alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 alias envoy='vendor/bin/envoy'
 #laradock
 alias laradock='cd laradock && docker compose exec --user=laradock workspace bash'
+#docker
+alias dps='docker ps'
+alias dka='docker kill $(docker ps -q)'

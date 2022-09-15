@@ -26,3 +26,7 @@ alias laradock='cd laradock && docker compose exec --user=laradock workspace bas
 #docker
 alias dps='docker ps'
 alias dka='docker kill $(docker ps -q)'
+#drush
+alias drush='lando drush'
+#temp dtheme override for lando
+alias dtheme='cd web && cd `drush ev "echo \Drupal::theme()->getActiveTheme()->getPath()"`'

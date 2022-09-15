@@ -1,0 +1,26 @@
+{
+    "drupal_theme_hook_preprocess": {
+		"body": [
+			"/**",
+			"* Implements hook_preprocess_HOOK().",
+			"*/",
+			"",
+			"function ${TM_FILENAME/([^\\.]+)\\..*/${1}/}_preprocess_$0(&\\$variables) {",
+			"\t$1",
+			"}"
+		],
+		"description": "Preprocess theme variables for a specific theme hook.",
+		"prefix": "dth",
+		"scope": "php"
+	},
+	"drupal_theme_attributes": {
+		"body": [
+			"if (is_array(\\$variables['attributes'])) {",
+    	"\t\\$variables['attributes'] = new Attribute(\\$variables['attributes']);",
+			"}"
+		],
+		"description": "Convert attributes array to Attribute object",
+		"prefix": "dta",
+		"scope": "php"
+	}
+}

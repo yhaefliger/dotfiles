@@ -95,7 +95,10 @@
   "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.experimental.classRegex": [
     "addClass\\('([^']+)'\\)",
-    ["addClass\\(\\[([^]]*)\\]\\)", "'([^']*)'"],
+    [
+      "addClass\\(([^\\)]*)\\)",
+      "'([^']*)'"
+    ],
     ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
     "'class' => '([^']+)'"
   ],

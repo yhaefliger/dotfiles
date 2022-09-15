@@ -30,3 +30,10 @@ alias dka='docker kill $(docker ps -q)'
 alias drush='lando drush'
 #temp dtheme override for lando
 alias dtheme='cd web && cd `drush ev "echo \Drupal::theme()->getActiveTheme()->getPath()"`'
+
+#vessel
+alias vsu='./vessel start'
+alias vsd='./vessel down'
+alias vss='./vessel exec app bash'
+alias vsa='./vessel artisan'
+alias vsc='./vessel composer'

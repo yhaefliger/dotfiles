@@ -266,6 +266,7 @@ prompt_phpversion() {
   prompt_segment blue black "PHP ${v//\%/%%}"
 }
 
+
 ## Main prompt
 build_prompt() {
   RETVAL=$?
@@ -274,7 +275,7 @@ build_prompt() {
   prompt_aws
   prompt_context
   prompt_openstack
-  prompt_phpversion
+  #prompt_phpversion
   prompt_dir
   prompt_git
   prompt_bzr
@@ -283,3 +284,4 @@ build_prompt() {
 }
 
 PROMPT='%{%f%b%k%}$(build_prompt) '
+RPROMPT='%{$fg[blue]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'

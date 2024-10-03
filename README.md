@@ -56,3 +56,8 @@ Restart vim or reload .vimrc and launch `:PlugInstall` to install plugins.
 ```
 stow tmux
 ```
+
+
+## Theme customization
+
+if you edit the theme run `antigen cache-gen` to regenerate the antigen-compat file of this theme.
